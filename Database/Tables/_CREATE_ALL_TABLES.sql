@@ -1,0 +1,36 @@
+--Disable foreign key validation
+SET FOREIGN_KEY_CHECKS=0
+--Turns and administration
+--TODO: Season table
+--TODO: Template table for approval and action results and so on (discord markdown!)
+START ./TURN.sql;
+START ./LOCATION.sql;
+START ./RESOURCE_TYPE.sql;
+--Settlements
+START ./SETTLEMENT_TYPE.sql;
+START ./SETTLEMENT_TYPE_ECONOMY_VALUES.sql;
+START ./SETTLEMENT_TYPE_BUILDING_CONSTRAINTS.sql;
+START ./SETTLEMENT.sql;
+START ./SETTLEMENT_STORAGE.sql;
+--Trade
+START ./TRADE_ROUTE.sql;
+START ./TRADE_ROUTE_RESOURCES.sql;
+--Buildings
+START ./BUILDING_TYPE.sql;
+START ./BUILDING_TYPE_ECONOMY_VALUES.sql;
+START ./BUILDING.sql;
+--Units
+START ./UNIT_CREATION_TYPE.sql;
+START ./UNIT_CREATION_TYPE_RESOURCE_CONFIG.sql;
+START ./UNIT_TYPE.sql;
+START ./UNIT_TYPE_COSTS.sql;
+START ./UNIT_INSTANCE.sql;
+--Factions
+START ./FACTION.sql;
+START ./FACTION_MEMBER.sql;
+--Actions
+START ./ACTION_TYPE.sql;
+START ./ACTION_CASUALTY.sql;
+START ./ACTION.sql;
+--And enable it when we are done
+SET FOREIGN_KEY_CHECKS=1
